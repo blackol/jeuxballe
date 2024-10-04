@@ -14,15 +14,15 @@ class Balle(ElementGraphique):
 
 
         def Deplacer(self,largeur,hauteur):
-	        self.rect.x += self.deltaX
-	        if self.rect.x <= -10 or self.rect.x >= largeur - 40 :
-	            self.deltaX = - self.deltaX
-	            self.rect.x = self.rect.x
+                self.rect.x += self.deltaX
+                if self.rect.x <= -10 or self.rect.x >= largeur - 40 :
+                        self.deltaX = - self.deltaX
+                        self.rect.x = self.rect.x
 
-	        self.rect.y += self.deltaY
-	        if self.rect.y <= 0 or self.rect.y >= hauteur - 40 :
-	            self.deltaY = - self.deltaY
-	            self.rect.y = self.rect.y
+                self.rect.y += self.deltaY
+                if self.rect.y <= 0 or self.rect.y >= hauteur - 40 :
+                        self.deltaY = - self.deltaY
+                        self.rect.y = self.rect.y
 
         def rebond(self,other):
                 if self.rect.colliderect(other.rect):

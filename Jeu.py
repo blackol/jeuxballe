@@ -187,7 +187,7 @@ def Intro():
 
     textes = lireTexteIntro()
     fond = ElementGraphique(images["noir"],0,0)
-    message = ElementGraphique(images["fondnoir"],largeur/2 - 100,hauteur/2 -120) ################################### Modifier quand on aurale massage
+    message = ElementGraphique(images["fondnoir"],largeur/2 - 100,hauteur/2 -120) ################################### Modifier quand on aura le message
     sans = JoueurAnimee(images["sans"],100,288)
     tour = 0
 
@@ -283,7 +283,7 @@ while Restart(restart) != 0:
 
         tour += 1
         score += 1
-        Fps = framerate.tick(60)
+        Fps = framerate.tick(30)
         textes = lireTextes()
 
         fond.afficher((fenetre))
